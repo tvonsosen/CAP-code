@@ -2,5 +2,5 @@ def boardLength(longBoard, shortBoard, planksNum):
     possibleLengths = []
     for i in range(planksNum+1):
         possibleLengths.append((longBoard*(planksNum-i)) + (shortBoard*i))
-    print("All possible lengths of the diving board:", possibleLengths)
+    return possibleLengths
 boardLength(longLength, shortLength, numberPlanks)
