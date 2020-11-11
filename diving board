@@ -1,0 +1,44 @@
+def boardLength(longBoard, shortBoard, planksNum):
+
+    possibleValues = planksNum + 1
+    allLong = longBoard*planksNum
+    
+    possibleLengths = []
+
+    for i in range(possibleValues):
+        #takes most possible length and subtracts same amount of longboards and adds same amount of short boards
+        newLength = allLong - (longBoard * i) + (shortBoard*i)
+        possibleLengths.append(newLength)
+    print("All possible lengths of the diving board:", possibleLengths)
+
+longLength = input("Length of long plank: ")
+shortLength = input("Length of short plank: ")
+numberPlanks = input("Number of planks on diving board: ")
+
+# Error checking
+try:
+    longLength = int(longLength)
+except:
+    print("Sorry! At least one of those is not a positive integer!")
+    exit()
+try:
+    shortLength = int(shortLength)
+except:
+    print("Sorry! At least one of those is not a positive integer!")
+    exit()
+try:
+    numberPlanks = int(numberPlanks)
+except:
+    print("Sorry! At least one of those is not a positive integer!")
+    exit()
+
+# Checking for negative or 0 numbers
+if shortLength > 0 and longLength > 0 and numberPlanks > 0:
+    pass
+else:
+    print("Sorry! At least one of those is not a positive integer!")
+    exit()
+
+
+boardLength(longLength, shortLength, numberPlanks)
+    
