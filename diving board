@@ -3,4 +3,3 @@ def boardLength(longBoard, shortBoard, planksNum):
     for i in range(planksNum+1):
         possibleLengths.append((longBoard*(planksNum-i)) + (shortBoard*i))
     return possibleLengths
-boardLength(longLength, shortLength, numberPlanks)
