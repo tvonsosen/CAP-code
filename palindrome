@@ -1,6 +1,4 @@
 import string
-stringofLett = 'adfaohreiteruopewrppewrpewwhhwefibufbewiopewbfweifubwefwerhewofudhgfb'
-
 def palindromeFind(stringofLett):
     palindromeright = ''
     palindromeleft = ''
@@ -18,4 +16,4 @@ def palindromeFind(stringofLett):
             other = alphabet[x]
     return (palindromeleft+other+palindromeright)
     
-print(palindromeFind(stringofLett))
+  palindromeFind('abc')
