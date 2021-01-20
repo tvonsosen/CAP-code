@@ -1,3 +1,5 @@
+# Gives you the longest palindrome in a string of integers
+
 import string
 def palindromeFind(stringofLett):
     palindromeright = ''
