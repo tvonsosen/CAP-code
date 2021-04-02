@@ -18,3 +18,22 @@ def stairsList(n):
 
 
 print(stairsList(8))
+
+   """
+    Why use Fibonacci Sequence: 
+    
+     Permutations for stairs:
+     0: 1 in this case
+     1: 1         --> 1 + 2 = 12
+     2: 2 11      --> 2 + 1 = 21   1 + 1 + 1  = 111
+     3: 21 12 111     < -- ^^    
+     4: 22 211 121 112 1111
+     5: 221 122 212 1112 1121 1211 2111 1111
+
+    Permutations for n:
+    
+    P(n) = P(n-1) + P(n-2)
+    where P(n) is the number of permutations for n stairs
+    This can be proved by induction
+
+    """
